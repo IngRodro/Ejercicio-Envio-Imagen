@@ -44,27 +44,28 @@ public class ControllerAcceso extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-
 		String user = request.getParameter("user");
 		String pass = request.getParameter("pass");
 		Loguin log = new Loguin();
 		clsLoguin clsL = new clsLoguin();
-
+		
 		log.setUser(user);
 		log.setPass(pass);
-
+		
 		int valoracceso = clsL.acceso(log);
-
-		if (valoracceso == 1) {
+		
+		if(valoracceso==1) {
 			ClsUsuario clsUsuario = new ClsUsuario();
 			var Usuario = clsUsuario.MostrarUsuarios();
 			response.sendRedirect("Saludo.jsp");
-			for (var iterar : Usuario) {
+			for(var iterar : Usuario)
+			{
 				System.out.println(iterar.getUsuario());
 			}
-		} else {
+		}else {
 			response.sendRedirect("Error.jsp");
-		}
+		
+	}
 
 	}
 }
