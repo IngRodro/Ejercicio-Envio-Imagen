@@ -47,4 +47,31 @@ public class ClsUsuario {
 			System.out.println(e);
 		}
 	}
+	public void Actualizar (usuario user) {
+		try {
+			CallableStatement consulta = con.prepareCall("call SP_U_USUARIO(?,?,?)");
+			consulta.setString("PUsuario", user.getUsuario());
+			consulta.setString("PPass", user.getPassword());
+			consulta.setInt("PidUsuario", user.getIdUsuario());
+			consulta.executeQuery();
+			System.out.println("Exito");
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+	
+	public void Agregar (usuario user) {
+		try {
+			CallableStatement consulta = con.prepareCall("call SP_I_USUARIO(?,?,?)");
+			consulta.setString("PUsuario", user.getUsuario());
+			consulta.setString("PPass", user.getPassword());
+			consulta.setString("PTipoUsuario", user.getTipoUser());
+			consulta.executeQuery();
+			System.out.println("Exito");
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 }

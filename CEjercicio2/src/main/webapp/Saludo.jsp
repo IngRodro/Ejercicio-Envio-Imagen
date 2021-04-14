@@ -31,7 +31,9 @@
 						<td>${item.idUsuario}</td>
 						<td>${item.Usuario}</td>
 						<td>${item.Password}</td>
-						<td><a class="btn btn-warning" href="ControllerMostrarInformacion?usu=${item.idUsuario}">Eliminar</a></td>
+						<td><a class="btn btn-danger" href="ControllerMostrarInformacion?usu=${item.idUsuario}&Eliminar=btne">Eliminar</a>
+						<a href="add.jsp?Id=${item.idUsuario}&Usuario=${item.Usuario}&Pass=${item.Password}" class="btn btn-warning"> Actualizar</a>
+						</td>
 					</tr>
 					`
 					console.log(item.Pass);
@@ -40,6 +42,7 @@
 		});
 		</script>
 	<h1>Bienvenido</h1>
+	<a href="add.jsp" type="button" class="btn btn-primary">Agregar</a>
 	<table class="table table-dark table-striped" id="tablaDatos">
 		<thead>
 			<th>IdUsuario</th>
