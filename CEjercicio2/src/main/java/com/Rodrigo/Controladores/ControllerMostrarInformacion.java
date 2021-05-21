@@ -39,6 +39,7 @@ public class ControllerMostrarInformacion extends HttpServlet {
 		String IdUsuario = request.getParameter("IdUsuario");
 		String usuario = request.getParameter("usuario");
 		String password = request.getParameter("pass");
+	
 
 		ClsUsuario clsusu = new ClsUsuario();
 		usuario usu = new usuario();

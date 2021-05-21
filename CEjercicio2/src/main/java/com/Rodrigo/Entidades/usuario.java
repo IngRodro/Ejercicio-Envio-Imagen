@@ -5,6 +5,7 @@ public class usuario extends tipoUsuarios{
 	int idUsuario;
     String Usuario;
     String Password;
+    String TipoUser;
 
     public int getIdUsuario() {
         return idUsuario;
@@ -29,4 +30,16 @@ public class usuario extends tipoUsuarios{
     public void setPassword(String Password) {
         this.Password = Password;
     }
+
+	public String getTipoUser() {
+		return TipoUser;
+	}
+
+	public void setTipoUser(String tipoUser) {
+		TipoUser = tipoUser;
+	}
+
+
+    
+    
 }

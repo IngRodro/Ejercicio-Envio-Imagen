@@ -4,22 +4,23 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="CSS/estiloindex.css">
 <title>Insert title here</title>
 </head>
 <body>
 	<form action="ControllerAcceso" method = "post">
-		<label>User</label>
+	
+	<div class="contendor">
+		<label class="label">User</label>
 		<br>
-		<input type="text" name="user" placeholder="Escribe tu Usuario">
+		<input class="cajatexto" type="text" name="user" placeholder="Escribe tu Usuario">
 		<br>
-		<label>Pass</label>
+		<label class="label">Pass</label>
 		<br>
-		<input type="text" name="pass" placeholder="Escribe tu contraseña">
+		<input class="cajatexto" type="text" name="pass" placeholder="Escribe tu contraseña">
 		<br>
-		<input type="submit">
+		<input class="cajatexto" type="submit">
+	</div>
 	</form>
-	
-	<%String saludo ="Hola Mundo desde Java"; %>
-	
 </body>
 </html>

@@ -5,8 +5,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="CSS/estilosMensajes.css">
 </head>
 <body>
-<h1>Error</h1>
+<div class="contendor">
+<h1 align="center">Error</h1>
+</div>
 </body>
 </html>

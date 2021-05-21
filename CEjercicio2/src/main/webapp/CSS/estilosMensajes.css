@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+.contendor{
+
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    background:white;
+    text-align: center;
+    top: 50%;
+    right: 50%; 
+    transform: translate(50%,-50%);
+    border-radius: 30px;
+    border: solid rgb(34, 27, 27) 10px;
+    font-size: 60px;
+}
